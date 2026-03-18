@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background:#000;
+}
+
+/* Heading */
+h1{
+    color:#fff;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+/* Calculator box */
+.calculator{
+    background:#111;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.8);
+    width:280px;
+}
+
+/* Display */
+#display{
+    width:100%;
+    height:70px;
+    font-size:32px;
+    margin-bottom:15px;
+    margin-left: -10px;
+    text-align:right;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#000;
+    color:#fff;
+}
+
+/* Buttons grid */
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+/* Base buttons */
+button{
+    height:60px;
+    font-size:20px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:#1c1c1e;
+    color:#fff;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#2c2c2e;
+}
+
+button:active{
+    transform:scale(0.9);
+}
+
+/* Operators */
+button:nth-child(4n){
+    background:#ff9f0a;
+}
+
+button:nth-child(4n):hover{
+    background:#e68a00;
+}
+
+/* Clear button */
+#clear{
+    background:#ff453a;
+}
+
+#clear:hover{
+    background:#d93a30;
+}
+
+/* Equal button */
+.equal{
+    grid-column: span 4;
+    border-radius:12px;
+    background:#0a84ff;
+    font-size:22px;
+}
+
+.equal:hover{
+    background:#006fe0;
+}
